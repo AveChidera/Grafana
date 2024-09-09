@@ -153,6 +153,7 @@ To configure Prometheus to scrape metrics from Node Exporter.
  ```bash
 cd /etc/prometheus
 sudo nano prometheus.yml
+```
 
 ```yaml
 global:
