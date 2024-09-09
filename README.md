@@ -1,3 +1,5 @@
+# Setting Up Grafana Cloud with Prometheus on AWS
+
 **Prometheus Installation**
 
 - Create a Prometheus VM instance
