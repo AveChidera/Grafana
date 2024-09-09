@@ -162,7 +162,7 @@ scrape_configs:
   - job_name: 'node_exporter'
     static_configs:
       - targets: ['localhost:9100']
- ```
+```
 
 Check the validity of the configuration file:
 
@@ -198,12 +198,12 @@ You can access Prometheus targets at:
 - Click "Save & Test".
 
 
-**GO TO DASHBOARD**
+**Go to Dashboard**
 - Click on New and Click Import.
 - Paste the Node Exporter ID (1860), then click on Load.
 
 
-**INSTALL STRESS IN THE PROMETHEUS SERVER TO SIMULATE STRESS ON THE SERVER**
+**Install Stress in the Prometheus Server to Simulate stress on the Server**
 
 ```bash
 sudo apt update
