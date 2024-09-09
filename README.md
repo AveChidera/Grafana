@@ -43,7 +43,7 @@ sudo nano /etc/systemd/system/prometheus.service
 Add the following content to the prometheus.service file:
 
 ```plaintext
-. [Unit]
+[Unit]
 Description=Prometheus
 Wants=network-online.target
 After=network-online.target
@@ -101,13 +101,13 @@ sudo mv node_exporter-1.6.1.linux-amd64/node_exporter /usr/local/bin/
 rm -rf node_exporter*
  ```
 
-- Create a systemd unit configuration file for Node Exporter:
+Create a systemd unit configuration file for Node Exporter:
 
  ```bash
 sudo nano /etc/systemd/system/node_exporter.service
  ```
  
-- Add the following content to the node_exporter.service file:
+Add the following content to the node_exporter.service file:
 
  ```plaintext
 [Unit]
@@ -180,11 +180,13 @@ You can access Prometheus targets at:
 
 `http://<your-prometheus-ip>:9090/targets`
 
+
 **Sign Up for Grafana Cloud**
 
 - Go to the Grafana Cloud website: https://grafana.com/cloud/
 - Click on "Create Free Account" and follow the registration process.
 - Verify your email address and log in to your Grafana Cloud account.
+
 
 **Add Prometheus as a Data Source**
 
@@ -195,9 +197,11 @@ You can access Prometheus targets at:
 - ⁠Replace localhost with Prometheus public ip
 - Click "Save & Test".
 
+
 **GO TO DASHBOARD**
 - Click on New and Click Import.
 - Paste the Node Exporter ID (1860), then click on Load.
+
 
 **INSTALL STRESS IN THE PROMETHEUS SERVER TO SIMULATE STRESS ON THE SERVER**
 
@@ -209,6 +213,4 @@ sudo apt install -y stress
 stress --cpu 4 --timeout 60s
 ```
 
-- After Installing Stress, Go back to your Grafana Dashboard to see the CPU utilization.
-
-
+After Installing Stress, Go back to your Grafana Dashboard to see the CPU utilization.
