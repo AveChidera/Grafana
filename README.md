@@ -219,7 +219,7 @@ stress --cpu 4 --timeout 60s
 stress --vm 2 --vm-bytes 256M --timeout 60s
 ```
 ```bash
-stress --io 4 --timeout 10s
+stress --io 4 --timeout 60s
 ```
 
 
