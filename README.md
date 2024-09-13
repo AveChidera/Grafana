@@ -218,5 +218,9 @@ stress --cpu 4 --timeout 60s
 ```bash
 stress --vm 2 --vm-bytes 256M --timeout 60s
 ```
+```bash
+stress --io 4 --timeout 10s
+```
+
 
 After Installing Stress, Go back to your Grafana Dashboard to see the CPU utilization.
